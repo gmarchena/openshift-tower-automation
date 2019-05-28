@@ -1,6 +1,7 @@
 ---
 #Try to create dev project and register result
 #Openshift client is expected to be already available on the OC_CLIENT_PATH
+- hosts: all
 - name: '[Create Projects] Create DEV project'
   command: "{{ OC_CLIENT_PATH }}/oc new-project {{ SERVICE_NAME }}-dev"
   register: result
