@@ -1,4 +1,4 @@
 ---
 # tasks file for create_projects
-- hosts: all
+hosts: all
 - include: 00_create_projects.yml
