@@ -1,6 +1,6 @@
 ---
 - name: '[Global] Create projects'
-  hosts: all
+  hosts: all 
   become: false
   roles:
     - role: ocp_login
