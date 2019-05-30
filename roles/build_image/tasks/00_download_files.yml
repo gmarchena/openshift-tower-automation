@@ -1,7 +1,7 @@
 ---
 - name: '[Build Image] Get updated files from git repository'
   git:
-    repo: "http://{{ DOCKERFILE_GIT_URL }}:{{ DOCKERFILE_GIT_USER }}@{{ DOCKERFILE_GIT_PASS }}"
+    repo: "http://{{ DOCKERFILE_GIT_URL }}:{{ DOCKERFILE_GIT_PASS }}@{{ DOCKERFILE_GIT_USER }}"
     dest: "{{ DOWNLOAD_PATH }}/{{ SERVICE_NAME }}"
     accept_hostkey: yes
 
