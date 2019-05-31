@@ -7,5 +7,5 @@
 
 - name: '[Download Artifact] Download artifacts from Nexus'
   get_url:
-    url: "{{ NEXUS_BASE_URL }}/service/local/artifact/maven/content?r={{ NEXUS_REPOSITORY }}&g={{ ARTIFACT_GROUP }}&a={{ ARTIFACT_ID }}&p={{ ARTIFACT_TYPE }}&v={{ ARTIFACT_VERSION }}"
+    url: "{{ NEXUS_BASE_URL }}/#browse/browse&g={{ NEXUS_REPOSITORY }}&g={{ ARTIFACT_GROUP }}&a={{ ARTIFACT_ID }}&v={{ ARTIFACT_VERSION }}"
     dest: "{{ DOWNLOAD_PATH }}/{{ SERVICE_NAME }}"
