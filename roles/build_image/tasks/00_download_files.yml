@@ -5,7 +5,7 @@
     dest: "{{ DOWNLOAD_PATH }}/{{ SERVICE_NAME }}"
     accept_hostkey: yes
 
-#- name: '[Download Artifact] Download artifacts from Nexus'
-#  get_url:
-#    url: "{{ NEXUS_BASE_URL }}/{{ NEXUS_REPOSITORY }}&g={{ ARTIFACT_GROUP }}/{{ ARTIFACT_ID }}/{{ ARTIFACT_VERSION }}"
-#    dest: "{{ DOWNLOAD_PATH }}/{{ SERVICE_NAME }}/{{ SERVICE_NAME }}-1.0.war"
+- name: '[Download Artifact] Download artifacts from Nexus'
+  get_url:
+    url: "{{ NEXUS_BASE_URL }}/{{ NEXUS_REPOSITORY }}&g={{ ARTIFACT_GROUP }}/{{ ARTIFACT_ID }}/{{ ARTIFACT_VERSION }}"
+    dest: "{{ DOWNLOAD_PATH }}/{{ SERVICE_NAME }}/{{ SERVICE_NAME }}-1.0.war"
