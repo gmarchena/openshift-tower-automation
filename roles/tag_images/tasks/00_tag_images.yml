@@ -9,5 +9,5 @@
   command: "{{ OC_CLIENT_PATH }}/oc tag {{ SERVICE_NAME }}:latest {{ SERVICE_NAME }}:{{ SERVICE_NAME }}-pre"
 - name: '[Tag Images] Change to PRO project'
   command: "{{ OC_CLIENT_PATH }}/oc project {{ SERVICE_NAME }}-pro"
--name: '[Tag Images] Tag PRO image'
+- name: '[Tag Images] Tag PRO image'
   command: "{{ OC_CLIENT_PATH }}/oc tag {{ SERVICE_NAME }}:latest {{ SERVICE_NAME }}:{{ SERVICE_NAME }}-pro"
