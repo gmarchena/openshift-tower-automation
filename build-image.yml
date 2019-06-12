@@ -4,5 +4,5 @@
   become: false
   roles:
     - role: ocp_login
- #   - role: create-clean-workspace
+    - role: create-clean-workspace
     - role: build_image
