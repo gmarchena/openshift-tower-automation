@@ -11,7 +11,7 @@
 - name: '[Configure Projects] Change to DEV project'
   command: "{{ OC_CLIENT_PATH }}/oc project {{ SERVICE_NAME }}-dev"
 
-- name: '[Configure Projects] Create DEV template'
+- name: '[Configure Projects] Create DEV template lo cambie ya'
   command: "{{ OC_CLIENT_PATH }}/oc create -f {{ DOWNLOAD_PATH }}/{{ SERVICE_NAME }}template/template.json"
   register: result
   ignore_errors: True
