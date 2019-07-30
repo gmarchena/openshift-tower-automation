@@ -2,7 +2,7 @@
 #Intenta escalar un pod y  registra en  result
 #Openshift client is expected to be already available on the OC_CLIENT_PATH
 
-- name: '[elegir el Proyecto] pasarse al proyecto coolstore'
+- name: '[Elegir el Proyecto] pasarse al proyecto coolstore'
   command: "{{ OC_CLIENT_PATH }}/oc project coolstore"
  register: result
   ignore_errors: True
