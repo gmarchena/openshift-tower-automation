@@ -1,13 +1,13 @@
 ---
-#Try to create dev project and register result
+#Intenta cambiar el proyecto.
 #Openshift client is expected to be already available on the OC_CLIENT_PATH
-- name: '[Create Projects] Create DEV project'
+- name: '[Cambiar Proyecto] Cambia proyecto'
   command: "{{ OC_CLIENT_PATH }}/oc project  coolstore"
   register: result
   ignore_errors: True
-#Try to create dev project and register result
+#Intenta escarlar el pod
 #Openshift client is expected to be already available on the OC_CLIENT_PATH
-- name: '[Create Projects] Create DEV project'
+- name: '[Escalar pod] Escalando el pod'
   command: "{{ OC_CLIENT_PATH }}/oc scale --replicas=3 dc web-ui"
   register: result
   ignore_errors: True
