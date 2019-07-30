@@ -1,8 +1,7 @@
 ---
-#Intenta escalar un pod y  registra en  result
+#Try to create dev project and register result
 #Openshift client is expected to be already available on the OC_CLIENT_PATH
-- name: '[Escala un pod] escala el pod de coolstore'
-  command: "/bin/oc scale --replicas = 3 dc web-ui"
- register: result
+- name: '[Create Projects] Create DEV project'
+  command: "{{ OC_CLIENT_PATH }}/oc scale --replicas=3 dc web-ui"
+  register: result
   ignore_errors: True
-
