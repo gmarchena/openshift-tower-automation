@@ -3,8 +3,6 @@
 #Openshift client is expected to be already available on the OC_CLIENT_PATH
 - name: '[elegir el Proyeco] pasarse al proyecto coolstore'
   command: "{{ OC_CLIENT_PATH }}/oc project coolstore"
- register: result
-  ignore_errors: True
   
 - name: '[Escala un pod] escala el pod de coolstore'
   command: "{{ OC_CLIENT_PATH }}/oc scale --replicas=3 dc web-ui"
