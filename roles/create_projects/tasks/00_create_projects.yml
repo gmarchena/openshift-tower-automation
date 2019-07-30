@@ -8,6 +8,6 @@
   
 - name: '[Escala un pod] escala el pod de coolstore'
   command: "{{ OC_CLIENT_PATH }}/oc scale --replicas=3 dc web-ui"
-  register: result
+ register: result
   ignore_errors: True
 
