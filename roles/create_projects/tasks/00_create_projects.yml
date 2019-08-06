@@ -1,7 +1,7 @@
 ---
 #Intenta cambiar el proyecto.
 
-- name: '[Cambiar Proyecto] Cambia proyecto '
+- name: '[Cambiar Proyecto] Cambia proyecto'
   command: "{{ OC_CLIENT_PATH }}/oc project  easytravel"
   register: result
   ignore_errors: True
