@@ -1,13 +1,13 @@
 ---
 #Intenta cambiar el proyecto.
-#Openshift client is expected to be already available on the OC_CLIENT_PATH
+
 - name: '[Cambiar Proyecto] Cambia proyecto'
-  command: "{{ OC_CLIENT_PATH }}/oc project  reactive-microservices"
+  command: "{{ OC_CLIENT_PATH }}/oc project  easytravel"
   register: result
   ignore_errors: True
 #Intenta escarlar el pod
-#Openshift client is expected to be already available on the OC_CLIENT_PATH
+
 - name: '[Escalar pod] Escalando el pod'
-  command: "{{ OC_CLIENT_PATH }}/oc scale --replicas=3 dc hello-consumer"
+  command: "{{ OC_CLIENT_PATH }}/oc scale --replicas=3 dc easytravel"
   register: result
   ignore_errors: True
