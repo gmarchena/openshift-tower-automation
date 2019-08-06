@@ -8,6 +8,6 @@
 #Intenta escarlar el pod
 
 - name: '[Escalar pod] Escalando el pod'
-  command: "{{ OC_CLIENT_PATH }}/rc scale --replicas=3 dc easytravel-www"
+  command: "{{ OC_CLIENT_PATH }}/oc scale --replicas=3 rc easytravel-www"
   register: result
   ignore_errors: True
